@@ -1,1 +1,2 @@
-Footer
+	</body>
+</html>
