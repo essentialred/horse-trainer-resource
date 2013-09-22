@@ -32,24 +32,28 @@
 		<input type="submit">
 	</form>
 	<h2>Add Horse</h2>
-	<form id="add-horses">
+	<form id="add-horses" method="POST" action="/addhorse.php">
 		<div>
 			<label>Horse Name</label>
 			<p class="fine-print">Use full registered name if applicable</p>
-				<input type="text" name="horse-name" placeholder="Horse Name">
+				<input type="text" name="name" placeholder="Horse Name">
 		</div>
 		<div>
 			<label>Registry or Breed</label>
 				<input type="text" name="registry" placeholder="Registry">
 			<label>Registration Number</label>
-				<input type="text" name="registration-number" placeholder="Registration Number">
-			<label>Microship</label>
+				<input type="text" name="registration_number" placeholder="Registration Number">
+			<label>Microchip</label>
 				<input type="text" name="microchip" placeholder="Microchip">
 		</div>
 		<div>
 			<label>Birth date (year is required)</label>
-				<input type="date" name="birthdate">
+				<input type="date" name="birth_date">
 			<label>Gender</label>
+            <input type="text" name="gender" placeholder="GENDER">
+            <input type="submit">
+        </div>
+    </form>
 </section>
 <section id="ux-notes">
 	<h1>UX Notes</h1>
