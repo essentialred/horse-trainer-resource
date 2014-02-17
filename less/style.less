@@ -10,7 +10,26 @@
  *-----------------------------------------------------------------------------
  *----------------------------------------------------------------------------- */
 
+body {
+	background: url(/img/top_bg5.jpg) 50% 0% no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
 
+h1 {
+	color: @lightest;
+	text-align:center;
+	font-size: 2em;
+}
+
+a {
+	color: @honeydew;
+	text-decoration: none;
+
+	&:hover {
+		color: @accent;
+	}
+}
 
 
 /*-----------------------------------------------------------------------------
@@ -22,14 +41,30 @@
  *-----------------------------------------------------------------------------
  *----------------------------------------------------------------------------- */
 
-#ux-notes {
-	width: 30%;;
-	float: left;
+#form-nav {
+	width: 100%;
+	display: block;
+	margin: 0 auto;
+	padding: 15px 0;
+	text-align: center;
+	background: fade(@darkest, 50%);
+
+	a {
+		display: inline-block;
+		margin: 0 20px;
+		color: @honeydew;
+		font-size: 1em;
+	}
 }
 
-#registration-form {
-	float: right;
-	width: 70%;
+.search-module {
+	margin-top: 15%;
+
+	input {
+		width: 100%;
+		padding: 10px;
+		font-size: 1.3em;
+	}
 }
 
 /*-----------------------------------------------------------------------------
@@ -42,7 +77,131 @@
  *-----------------------------------------------------------------------------
  *----------------------------------------------------------------------------- */
 
+form {
+	width: 60%;
+	margin: 0 auto;
+	color: @lightest;
 
+	label,
+	h4 {
+		float: left;
+		clear: both;
+		margin: 5px 20px 0 0;
+		font-weight: bold;
+	}
+
+	input {
+		width: 90%;
+		float: left;
+		clear: left;
+		background: fade(@lightest, 70%);
+		.border-radius(5px);
+		padding: 3px;
+		margin: 5px 0;
+	}
+
+	.full-row {
+		width: 100%;
+		float: left;
+		clear: both;
+		margin: 0 0 20px;
+
+		> input[type=text] {
+			width: 95%;
+		}
+	}
+
+	.half-row {
+		width: 50%;
+		float: left;
+		clear: none;
+		margin: 0 0 20px;
+	}
+
+	.fine-print {
+		margin-bottom: 0;
+	}
+
+	.checkboxes {
+
+		&.inline {
+			label {
+		    	display: inline-block;
+		    	float: none;
+		    	clear: none;
+			}
+		}
+
+		label {
+			float: left;
+			clear: left;
+			display: block;
+		    height: 1em;
+		    margin: 5px 20px 0 0;
+		    padding-left: 20px;
+			cursor: pointer;
+		    font-weight: 400;
+
+		    &.text-field-label {
+		    	padding-left: 0;
+		    }
+		}
+
+		input[type=checkbox] {
+			margin: 1px 0 0 -20px;
+		}
+		input[type=text] {
+			display: inline-block;
+			width: auto;
+			float: right;
+			margin: -.5em 0 0 20px;
+		}
+	}
+}
+
+.fine-print {
+	font-size: .8em;
+	font-style: italic;
+}
+
+input[type=checkbox] {
+	width: 13px;
+	height: 13px;
+	float: left;
+	.box-sizing(border-box);
+}
+
+input[type=submit] {
+	width: auto;
+	display: inline-block;
+	padding: 10px;
+	border: 0;
+	background: @honeydew;
+	.box-shadow(-1px -1px 3px DarkOliveGreen inset);
+
+	&:hover {
+		background: darken(@honeydew, 5%);
+		.box-shadow(0px 0px 3px DarkOliveGreen inset);
+	}
+}
+
+.well {
+	.box-sizing(border-box);
+	padding: 20px;
+	background: fade(@lightest, 70%);
+	.border-radius(20px);
+
+	&.dark {
+		background: fade(black, 40%);
+	}
+}
+
+.centered {
+	display: inline-block;
+	float: none;
+	width: auto;
+	margin: 0 auto;
+}
 
 
 /*-----------------------------------------------------------------------------

@@ -4,16 +4,16 @@ module.exports = function(grunt) {
   /** Project Config */
   /*-------------------------------------------- */
   
-  var lessOptionsPaths = ['less'],
+var lessOptionsPaths = ['less'],
     lessFiles = {
-      'css/style.css': 'less/style.less'
+        'css/style.css': 'less/style.less'
     };
 
-  var jsOptionsPaths = ['js'],
+var jsOptionsPaths = ['js'],
     jsFiles = ['js/scripts.js'],
     uglifyFiles = { 'js/scripts.min.js': jsFiles };
 
-  grunt.initConfig({
+grunt.initConfig({
     
     watch: {
       options: {

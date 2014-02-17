@@ -190,6 +190,11 @@ textarea {
     page-break-after: avoid;
   }
 }
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 /*-----------------------------------------------------------------------------
  *----------------------------------------------------------------------------- 
  *
@@ -197,6 +202,23 @@ textarea {
  *
  *-----------------------------------------------------------------------------
  *----------------------------------------------------------------------------- */
+body {
+  background: url(/img/top_bg5.jpg) 50% 0% no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+h1 {
+  color: #f8f8ff;
+  text-align: center;
+  font-size: 2em;
+}
+a {
+  color: #f0fff0;
+  text-decoration: none;
+}
+a:hover {
+  color: #ffe4e1;
+}
 /*-----------------------------------------------------------------------------
  *----------------------------------------------------------------------------- 
  *
@@ -205,13 +227,27 @@ textarea {
  *
  *-----------------------------------------------------------------------------
  *----------------------------------------------------------------------------- */
-#ux-notes {
-  width: 30%;
-  float: left;
+#form-nav {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  padding: 15px 0;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
 }
-#registration-form {
-  float: right;
-  width: 70%;
+#form-nav a {
+  display: inline-block;
+  margin: 0 20px;
+  color: #f0fff0;
+  font-size: 1em;
+}
+.search-module {
+  margin-top: 15%;
+}
+.search-module input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1.3em;
 }
 /*-----------------------------------------------------------------------------
  *-----------------------------------------------------------------------------
@@ -222,6 +258,115 @@ textarea {
  *
  *-----------------------------------------------------------------------------
  *----------------------------------------------------------------------------- */
+form {
+  width: 60%;
+  margin: 0 auto;
+  color: #f8f8ff;
+}
+form label,
+form h4 {
+  float: left;
+  clear: both;
+  margin: 5px 20px 0 0;
+  font-weight: bold;
+}
+form input {
+  width: 90%;
+  float: left;
+  clear: left;
+  background: rgba(248, 248, 255, 0.7);
+  border-radius: 5px;
+  padding: 3px;
+  margin: 5px 0;
+}
+form .full-row {
+  width: 100%;
+  float: left;
+  clear: both;
+  margin: 0 0 20px;
+}
+form .full-row > input[type=text] {
+  width: 95%;
+}
+form .half-row {
+  width: 50%;
+  float: left;
+  clear: none;
+  margin: 0 0 20px;
+}
+form .fine-print {
+  margin-bottom: 0;
+}
+form .checkboxes.inline label {
+  display: inline-block;
+  float: none;
+  clear: none;
+}
+form .checkboxes label {
+  float: left;
+  clear: left;
+  display: block;
+  height: 1em;
+  margin: 5px 20px 0 0;
+  padding-left: 20px;
+  cursor: pointer;
+  font-weight: 400;
+}
+form .checkboxes label.text-field-label {
+  padding-left: 0;
+}
+form .checkboxes input[type=checkbox] {
+  margin: 1px 0 0 -20px;
+}
+form .checkboxes input[type=text] {
+  display: inline-block;
+  width: auto;
+  float: right;
+  margin: -0.5em 0 0 20px;
+}
+.fine-print {
+  font-size: .8em;
+  font-style: italic;
+}
+input[type=checkbox] {
+  width: 13px;
+  height: 13px;
+  float: left;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+input[type=submit] {
+  width: auto;
+  display: inline-block;
+  padding: 10px;
+  border: 0;
+  background: #f0fff0;
+  -webkit-box-shadow: -1px -1px 3px DarkOliveGreen inset;
+  box-shadow: -1px -1px 3px DarkOliveGreen inset;
+}
+input[type=submit]:hover {
+  background: #d7ffd7;
+  -webkit-box-shadow: 0px 0px 3px DarkOliveGreen inset;
+  box-shadow: 0px 0px 3px DarkOliveGreen inset;
+}
+.well {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 20px;
+  background: rgba(248, 248, 255, 0.7);
+  border-radius: 20px;
+}
+.well.dark {
+  background: rgba(0, 0, 0, 0.4);
+}
+.centered {
+  display: inline-block;
+  float: none;
+  width: auto;
+  margin: 0 auto;
+}
 /*-----------------------------------------------------------------------------
  *----------------------------------------------------------------------------- 
  *
