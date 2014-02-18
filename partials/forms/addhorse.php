@@ -1,6 +1,6 @@
 <section id="register-horse">
 	<h2>Add Horse</h2>
-	<form id="add-horses" method="POST" action="functions/addhorse.php">
+	<form id="add-horses" class="create" method="POST" action="functions/addhorse.php">
 		<div>
 			<label>Horse Name</label>
 			<p class="fine-print">Use full registered name if applicable</p>

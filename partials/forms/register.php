@@ -1,6 +1,6 @@
 <section id="register">
 	<h1>Register</h1>
-	<form id="registration" method="POST" action="functions/register.php">
+	<form id="registration" class="create" method="POST" action="functions/register.php">
 		<div class="full-row">
 			<div class="full-row">
 				<label>Full Name</label>

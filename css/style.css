@@ -97,6 +97,7 @@ textarea {
   margin: 0;
   font-size: 100%;
   vertical-align: middle;
+  outline: none;
 }
 button,
 input {
@@ -242,7 +243,7 @@ a:hover {
   font-size: 1em;
 }
 .search-module {
-  margin-top: 15%;
+  margin-top: 18%;
 }
 .search-module input {
   width: 100%;
@@ -366,6 +367,17 @@ input[type=submit]:hover {
   float: none;
   width: auto;
   margin: 0 auto;
+}
+.inlaid-submit {
+  position: relative;
+}
+.inlaid-submit input[type=submit] {
+  position: absolute;
+  top: 6px;
+  right: -25px;
+  margin: 0;
+  height: 47px;
+  border-radius: 0 5px 5px 0;
 }
 /*-----------------------------------------------------------------------------
  *----------------------------------------------------------------------------- 

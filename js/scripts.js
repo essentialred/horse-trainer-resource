@@ -7,10 +7,20 @@
         animation: 'slide'
     });
 
+    $('.search').submit(function(e){
+        e.preventDefault();
+
+        var query = $(this).find('input').val();
+
+        $.get(this.action + '?' + query, function(data) {
+            console.log(data);
+        });
+    });
+
     // variable to hold request
     var request;
     // bind to the submit event of our form
-    $('form').submit(function(event){
+    $('.create').submit(function(event){
         // abort any pending request
         if (request) {
             request.abort();
