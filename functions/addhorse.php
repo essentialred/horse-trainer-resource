@@ -4,7 +4,7 @@ require('dbconnect.php');
 
 $return = '';
 
-$required = ($_POST['name'] && $_POST['gender'] && $_POST['birth_date']);
+$required = ($_POST['name'] && $_POST['gender']);
 
 if($mysqli->query('
         INSERT INTO `horses` (
@@ -37,3 +37,5 @@ if($mysqli->query('
 
 header('Content-Type: application/json');
 echo json_encode($return);
+
+$mysqli->close();
