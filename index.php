@@ -16,5 +16,8 @@
 		</li>
 	</ul>
 </section>
+<section id="view-container">
+
+</section>
 		
 <?php require('partials/footer.php'); ?>

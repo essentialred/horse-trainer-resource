@@ -1,5 +1,5 @@
 <!doctype html>
-<html ng-app>
+<html>
 	<head>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="viewport" content="" />
@@ -15,7 +15,6 @@
 			document.createElement('footer');
 		</script>
 		<![endif]-->
-		<script src="../js/vendor/angular.min.js"></script>
 	</head>
 	<body>
 		<nav id="form-nav">

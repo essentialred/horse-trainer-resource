@@ -5,7 +5,7 @@ require('../functions/dbconnect.php');
 $name = isset($_GET['name']) ? $_GET['name'] : false;
 
 if ($name) :
-	$query = $mysqli->query('SELECT * FROM horses
+	$query = $mysqli->query('SELECT id, name FROM horses
 	WHERE `horses`.name LIKE "%'.$name.'%"');
 
 	/* 
@@ -24,11 +24,11 @@ if ($name) :
 
 	echo json_encode($results);
 
-else :
+else : ?>
 
-	echo json_encode("success": false);
+	<p>No Horses found</p>
 	
-endif; 
+<?php endif; 
 
 $mysqli->close();
 
