@@ -7,12 +7,12 @@
         animation: 'slide'
     });
 
-    $('.search').submit(function(e){
+    $('#search-form').submit(function(e){
         e.preventDefault();
 
         var query = $(this).find('input').val();
 
-        $.get(this.action + '?' + query, function(data) {
+        $.get(this.action + query, function(data) {
             console.log(data);
         });
     });
