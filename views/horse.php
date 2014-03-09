@@ -6,7 +6,7 @@ $id = isset($_GET['id']) ? $_GET['id'] : false;
 
 if ($id) :
 	$query = $mysqli->query('SELECT * FROM horses
-	WHERE `horses`.name = "'.$id.'"');
+	WHERE `horses`.id = "'.$id.'"');
 
 	echo $mysqli->error;
 
